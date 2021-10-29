@@ -1,10 +1,11 @@
 #!/bin/bash
-location="https://iina.io/dylibs/universal"
-IFS=$'\n' read -r -d '' -a files < <(curl "${location}/filelist.txt" && printf '\0')
+location="https://github.com/jesec/homebrew-mpv-iina/releases/latest/download"
+IFS=$'\n' read -r -d '' -a files < <(curl -L "${location}/filelist.txt" && printf '\0')
+rm -rf deps/lib
 mkdir -p deps/lib
 for file in "${files[@]}"
 do
   set -x
-  curl "${location}/${file}" > deps/lib/$file
+  curl -L "${location}/${file}" -o deps/lib/$file
   { set +x; } 2>/dev/null
 done
