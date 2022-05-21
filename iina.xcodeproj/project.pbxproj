@@ -125,8 +125,6 @@
 		8450404A1E0B13230079C194 /* CropBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845040491E0B13230079C194 /* CropBoxView.swift */; };
 		8451E6D92604AEFC009A15D7 /* Just in Frameworks */ = {isa = PBXBuildFile; productRef = 8451E6D82604AEFC009A15D7 /* Just */; };
 		8452DD851D3B956D008A543A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452DD841D3B956D008A543A /* Preference.swift */; };
-		845404AA1E4396F500B02B12 /* ScriptLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845404A91E4396F500B02B12 /* ScriptLoader.swift */; };
-		845404AC1E43980900B02B12 /* LuaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845404AB1E43980900B02B12 /* LuaScript.swift */; };
 		845ABEAC1D4D19C000BFB15B /* MPVTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845ABEAB1D4D19C000BFB15B /* MPVTrack.swift */; };
 		845AC09C1E1AE6C10080B614 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 845AC09E1E1AE6C10080B614 /* Localizable.strings */; };
 		845E70B2210CB59D00D06C42 /* ScrollingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E70B1210CB59D00D06C42 /* ScrollingTextField.swift */; };
@@ -344,16 +342,6 @@
 				49718001272BA685003F328C /* libpostproc.55.dylib in Copy Dylibs */,
 			);
 			name = "Copy Dylibs";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84817CE81DBE2E3200CC2279 /* Copy Lua Scripts */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = scripts;
-			dstSubfolderSpec = 7;
-			files = (
-			);
-			name = "Copy Lua Scripts";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		84E745DA1DFDE9C600588DED /* Copy Configs */ = {
@@ -779,8 +767,6 @@
 		845040451E0B0F500079C194 /* CropSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropSettingsViewController.swift; sourceTree = "<group>"; };
 		845040491E0B13230079C194 /* CropBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropBoxView.swift; sourceTree = "<group>"; };
 		8452DD841D3B956D008A543A /* Preference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
-		845404A91E4396F500B02B12 /* ScriptLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptLoader.swift; sourceTree = "<group>"; };
-		845404AB1E43980900B02B12 /* LuaScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuaScript.swift; sourceTree = "<group>"; };
 		845635401EE1AFA500D36591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Contribution.rtf; sourceTree = "<group>"; };
 		845900C1220E134200B4A7C4 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		845900C2220E134200B4A7C4 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/MainWindowController.strings; sourceTree = "<group>"; };
@@ -1553,7 +1539,6 @@
 				84EC12821F4F939000137C1E /* FilterPresets.swift */,
 				84EC12881F504D2500137C1E /* FilterPresets.strings */,
 				E3CB75BC1FDACB82004DB10A /* SavedFilter.swift */,
-				845404AB1E43980900B02B12 /* LuaScript.swift */,
 				84C6D3631EB276E9009BF721 /* PlaybackHistory.swift */,
 			);
 			name = Models;
@@ -1721,7 +1706,6 @@
 				84EB1ED91D2F51D3004FA5A1 /* AppDelegate.swift */,
 				84A0BA961D2FA1CE00BC8DA1 /* PlayerCore.swift */,
 				84A0BA981D2FAAA700BC8DA1 /* MPVController.swift */,
-				845404A91E4396F500B02B12 /* ScriptLoader.swift */,
 				84C6D3611EAF8D63009BF721 /* HistoryController.swift */,
 				84FBCB361EEACDDD0076C77C /* FFmpegController.h */,
 				84FBCB371EEACDDD0076C77C /* FFmpegController.m */,
@@ -2119,7 +2103,6 @@
 				84EB1ED41D2F51D3004FA5A1 /* Resources */,
 				84817C991DBDF57C00CC2279 /* Copy Dylibs */,
 				84B1CE561F98CAE300994D63 /* Copy Dylib Symlinks */,
-				84817CE81DBE2E3200CC2279 /* Copy Lua Scripts */,
 				84E745DA1DFDE9C600588DED /* Copy Configs */,
 				8461BA631E423423008BB852 /* Copy Executables */,
 				4954298A216C34960058F680 /* Embed App Extensions */,
@@ -2421,7 +2404,6 @@
 				84A0BA9B1D2FAB4100BC8DA1 /* Parameter.swift in Sources */,
 				84EB1F051D2F5C5B004FA5A1 /* AppData.swift in Sources */,
 				84C8D58F1D794CE600D98A0E /* MPVFilter.swift in Sources */,
-				845404AA1E4396F500B02B12 /* ScriptLoader.swift in Sources */,
 				84A0BAA11D2FAE7600BC8DA1 /* VideoView.swift in Sources */,
 				E33BA5C4204315740069A0F6 /* AssrtSubtitle.swift in Sources */,
 				844DE1BF1D3E2B9900272589 /* MPVEvent.swift in Sources */,
@@ -2429,7 +2411,6 @@
 				E33836852026223800ABC812 /* PrefOSCToolbarSettingsSheetController.swift in Sources */,
 				E301EFDA21312AB300BC8588 /* KeychainAccess.swift in Sources */,
 				8434BAA71D5DF2DA003BECF2 /* Extensions.swift in Sources */,
-				845404AC1E43980900B02B12 /* LuaScript.swift in Sources */,
 				847557141F405F8C0006B0FF /* MainWindowMenuActions.swift in Sources */,
 				841B14281E941DFF00744AB8 /* TimeLabelOverflowedStackView.swift in Sources */,
 				E33BA5C7204BD9FE0069A0F6 /* SubChooseViewController.swift in Sources */,
